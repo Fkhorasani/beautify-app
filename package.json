@@ -2,6 +2,9 @@
   "name": "Spotify-React",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.13.0"
+  },
   "dependencies": {
     "enzyme-adapter-react-16": "^1.15.2",
     "feather-icons": "^4.26.0",
