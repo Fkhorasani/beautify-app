@@ -71,7 +71,13 @@ export default class Navbar extends Component {
         >
           <div className="navbar">
             <div className="navbar__logo">
-              <img className="navbar__logo-img" src={logo} alt="" />
+              <a href={process.env.REACT_APP_REDIRECT_URL}>
+                <img
+                  className="navbar__logo-img"
+                  src={logo}
+                  alt="Beautify Logo"
+                />
+              </a>
               <SearchBtn className="navbar__search" />
             </div>
             <ul className="navbar__group">

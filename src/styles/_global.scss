@@ -6,9 +6,22 @@ body {
   font-size: ms(0);
   line-height: 1.6;
   font-family: $font-family-base;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background: $border-color;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $text-dark;
+    border-radius: $border-radius;
+  }
+
   &.disable-scroll {
     overflow-y: hidden;
   }
+
   @keyframes gradient {
     0% {
       background-position: 0% 50%;

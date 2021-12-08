@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .navbar__logo-img {
+      width: 100px;
+      height: auto;
+    }
   }
   &__search {
     width: 20px;

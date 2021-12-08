@@ -1,0 +1,110 @@
+@import "variables", "modularscale";
+
+:root {
+  --photo-width: 250px;
+  @media screen and (max-width: 1160px) {
+    --photo-width: 200px;
+  }
+  @media screen and (max-width: 1025px) {
+    --photo-width: 180px;
+  }
+  @media screen and (max-width: 655px) {
+    --photo-width: 400px;
+  }
+  @media screen and (max-width: 435px) {
+    --photo-width: 300px;
+  }
+  @media screen and (max-width: 305px) {
+    --photo-width: 220px;
+  }
+}
+
+.card-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 655px) {
+    flex-direction: column;
+    align-items: center;
+    .card:not(:first-child) {
+      margin: 2rem 0;
+    }
+  }
+}
+
+.card {
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: var(--photo-width);
+    box-shadow: $shadows;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .desc {
+    margin-top: 1rem;
+    &__title {
+      color: $text-secondary;
+      font-weight: 500;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.locked {
+  overflow: hidden;
+}
+
+.blurred {
+  visibility: visible !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.show {
+  width: 50% !important;
+  transform: translateX(0) !important;
+}
+
+.desc-sidebar-wrapper {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100vw;
+  height: 100vh;
+  z-index: 90;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
+
+  .desc-sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    transform: translateX(100%);
+    background-color: white;
+    height: 100vh;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+    box-shadow: -7px 0 13px 0 rgb(168 179 211 / 50%);
+    padding: 2rem;
+
+    @media screen and (max-width: 655px) {
+      width: 100% !important;
+      box-shadow: unset;
+    }
+  }
+}
