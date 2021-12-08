@@ -50,11 +50,21 @@ export default class Auth {
     }
   }
 
-  static setUserId() {
-    SPOTIFY_API.getMe().then(
-      (response) => localStorage.setItem(USER_ID, response.id),
-      (error) => console.error(error)
-    );
+  static async setUserId() {
+    let res = null;
+    try {
+      res = await SPOTIFY_API.getMe();
+    } catch (error) {
+      console.error();
+    } finally {
+      localStorage.setItem(USER_ID, res.display_name);
+      console.log(res);
+    }
+
+    // SPOTIFY_API.getMe().then(
+    //   (response) => localStorage.setItem(USER_ID, response.id),
+    //   (error) => console.error(error)
+    // );
   }
 
   static redirectToLoginPage() {
