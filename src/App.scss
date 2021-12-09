@@ -8,7 +8,7 @@
   &__navbar {
     width: 20.3%;
     padding: 40px 35px;
-    border-right: 1px solid $border-color;
+    // border-right: 1px solid $border-color;
     &_mobile {
       position: fixed;
       right: -1000%;
@@ -22,6 +22,7 @@
     }
   }
   &__content {
+    animation: discoBg 60s linear infinite;
     width: 79.7%;
     padding: 40px 80px 140px;
     @media (max-width: 1024px) {
@@ -33,5 +34,32 @@
     @media (max-width: 450px) {
       padding: 40px 30px 140px;
     }
+  }
+}
+
+@keyframes discoBg {
+  0% {
+    // background: #FFC4E1;
+    background: linear-gradient(180deg, #ffc4e1 -120%, #0000 50%);
+  }
+  20% {
+    // background: #F6D7A7;
+    background: linear-gradient(180deg, #f6d7a7 -120%, #0000 50%);
+  }
+  40% {
+    // background: #C37B89;
+    background: linear-gradient(180deg, #c37b89 -120%, #0000 50%);
+  }
+  60% {
+    // background: #D3E4CD;
+    background: linear-gradient(180deg, #d3e4cd -120%, #0000 50%);
+  }
+  80% {
+    // background: #986D8E;
+    background: linear-gradient(180deg, #986d8e -120%, #0000 50%);
+  }
+  100% {
+    // background: #DE8971;
+    background: linear-gradient(180deg, #de8971 -120%, #0000 50%);
   }
 }

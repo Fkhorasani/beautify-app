@@ -1,18 +1,39 @@
-@import
-"variables",
-"normalize",
-"modularscale",
-"~slick-carousel/slick/slick.css",
-"~slick-carousel/slick/slick-theme.css";
-
+@import "variables", "normalize", "modularscale",
+  "~slick-carousel/slick/slick.css", "~slick-carousel/slick/slick-theme.css";
 
 body {
+  color: $text-dark;
+
   background: $bg-primary;
   font-size: ms(0);
   line-height: 1.6;
   font-family: $font-family-base;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background: $border-color;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $text-green;
+    border-radius: $border-radius;
+  }
+
   &.disable-scroll {
     overflow-y: hidden;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
 
@@ -20,9 +41,13 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
   font-weight: 600;
-  color: $text-dark;
+  color: $bg-primary;
 }
 
 h1 {
@@ -35,6 +60,7 @@ h2 {
 
 h3 {
   font-size: ms(7);
+  color: $text-dark;
 }
 
 h4 {
@@ -97,7 +123,7 @@ input {
   font-size: ms(-2);
   position: absolute;
   z-index: 99;
-  box-shadow: 0px 0px 25px 0 rgba(165,149,198,0.2);
+  box-shadow: 0px 0px 25px 0 rgba(165, 149, 198, 0.2);
   width: 245px;
   border-radius: 10px;
   .select__dropdown {
@@ -109,7 +135,7 @@ input {
 .btn {
   border: 2px solid $border-color;
   border-radius: 24px;
-  padding: .5em 1.5em;
+  padding: 0.5em 1.5em;
   cursor: pointer;
   color: $text-primary;
   font-size: ms(0);
@@ -181,7 +207,7 @@ input {
   outline: 0;
   text-align: center;
   -webkit-appearance: none;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   margin-right: 10px;
   &:before {
     content: "";
@@ -192,7 +218,8 @@ input {
     position: absolute;
     top: 50%;
     left: -3px;
-    transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+    transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98),
+      background 150ms ease;
     background: rgba(0, 0, 0, 0.2);
     transform: translate3d(0, -50%, 0) scale(0);
   }
@@ -205,7 +232,8 @@ input {
     position: absolute;
     top: 50%;
     left: -3px;
-    transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+    transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98),
+      background 150ms ease;
     background: $text-secondary;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transform: translate3d(0, -50%, 0);
@@ -294,7 +322,7 @@ input {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: $text-dark;
+  background: $text-green;
   border-radius: $border-radius;
 }
 
@@ -406,7 +434,7 @@ input {
 }
 
 .section-separators > section:not(:last-child) {
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid $border-color;
-  }
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  // border-bottom: 1px solid $border-color;
+}

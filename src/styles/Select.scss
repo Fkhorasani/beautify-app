@@ -10,6 +10,7 @@
     margin: 10px 0;
   }
   &__label {
+    color: $text-dark;
     cursor: pointer;
     padding: 10px 15px;
     font-size: ms(-1);
@@ -26,6 +27,7 @@
     }
   }
   &__title {
+    color: $text-dark;
     display: flex;
     align-items: center;
     padding: 14px 16px;
@@ -87,6 +89,7 @@
     color: $text-secondary;
   }
   &__option {
+    color: $text-dark;
     cursor: pointer;
     font-size: ms(-1);
     line-height: 18px;
@@ -102,6 +105,8 @@
     }
     &:hover {
       background: $bg-alt;
+      color: $bg-primary;
+
     }
   }
 }

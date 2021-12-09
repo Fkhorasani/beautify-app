@@ -1,6 +1,4 @@
-@import
-"variables",
-"modularscale";
+@import "variables", "modularscale";
 
 @mixin flex-center($align-items: center, $justify-content: center) {
   display: flex;
@@ -12,7 +10,7 @@
   width: 100%;
   display: flex;
   padding: 20px 35px;
-  box-shadow: 10px -6px 15px 0 rgba(168, 179, 211, 0.24);
+  box-shadow: 10px -6px 15px 0 rgb(30 215 96 / 15%);
   min-height: 100px;
   background: $bg-primary;
   @media (max-width: 900px) {
@@ -185,7 +183,7 @@
       display: block;
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;

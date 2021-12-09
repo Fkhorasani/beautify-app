@@ -1,6 +1,4 @@
-@import
-"variables",
-"modularscale";
+@import "variables", "modularscale";
 
 .navbar {
   position: fixed;
@@ -14,6 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .navbar__logo-img {
+      width: 100px;
+      height: auto;
+    }
   }
   &__search {
     width: 20px;
@@ -31,22 +33,28 @@
     &-header {
       margin-bottom: 30px;
       font-size: ms(-3);
-      letter-spacing: .9px;
+      letter-spacing: 0.9px;
       font-weight: 600;
       color: $text-secondary;
     }
   }
   &__item {
     display: inline-block;
-    letter-spacing: .6px;
+    letter-spacing: 0.6px;
     font-size: ms(-1);
     color: $text-secondary;
     font-weight: 500;
     &.active {
       font-weight: 500;
-      color: $text-dark;
+      color: $text-green;
       svg path {
-        fill: $text-dark;
+        fill: $text-green;
+      }
+    }
+    &:not(.active):hover {
+      color: $text-green-sec;
+      svg path {
+        fill: $text-green-sec;
       }
     }
   }
@@ -57,7 +65,7 @@
       height: 20px;
       vertical-align: middle;
       path {
-        fill: #B7B7B7;
+        fill: #b7b7b7;
       }
     }
   }

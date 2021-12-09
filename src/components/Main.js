@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import * as RouteConstant from "constants/RouteConstants";
@@ -75,6 +75,15 @@ class Main extends Component {
           <Route path={RouteConstant.GENRES} component={Categories} />
           <Route path={RouteConstant.CHARTS} component={Charts} />
           <Route path={RouteConstant.ABOUT} component={About} />
+          <Route
+            path="/sysclear"
+            exact
+            render={() => {
+              localStorage.clear();
+              window.location.href = window.location.href;
+              return <Redirect to="/" />;
+            }}
+          />
           <Route path="*">
             <Page404 />
           </Route>
