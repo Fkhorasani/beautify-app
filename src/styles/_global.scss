@@ -16,7 +16,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $text-dark;
+    background: $text-green;
     border-radius: $border-radius;
   }
 
@@ -43,12 +43,11 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
   font-weight: 600;
-  color: $text-dark;
+  color: $bg-primary;
 }
 
 h1 {
@@ -61,6 +60,7 @@ h2 {
 
 h3 {
   font-size: ms(7);
+  color: $text-dark;
 }
 
 h4 {
@@ -322,7 +322,7 @@ input {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: $text-dark;
+  background: $text-green;
   border-radius: $border-radius;
 }
 
