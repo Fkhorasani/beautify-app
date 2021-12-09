@@ -101,11 +101,11 @@
     right: 0;
     width: 50%;
     transform: translateX(100%);
-    background-color: black;
+    background-color: rgb(24, 24, 24);
     height: 100vh;
     z-index: 99;
     transition: all 0.5s ease-in-out;
-    box-shadow: -7px 0 13px 0 rgb(30 215 96 / 20%);
+    // box-shadow: -7px 0 13px 0 rgb(30 215 96 / 15%);
     padding: 5rem 2rem;
     display: flex;
     flex-direction: column;
@@ -122,6 +122,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      svg path {
+        fill: white;
+      }
     }
 
     &__container > * {

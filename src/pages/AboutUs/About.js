@@ -96,7 +96,7 @@ const About = () => {
           </div>
         </aside>
       </div>
-      <h1>About Us</h1>
+      <h3 className="block-header__title">About Us</h3>
       <div className="card-container">
         {teamMember.map((data, index) => (
           <Card

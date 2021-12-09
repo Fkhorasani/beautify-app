@@ -58,6 +58,7 @@ export default class Auth {
 
   static redirectToLoginPage() {
     const loginUrl = this._createLoginUrl();
+    sessionStorage.setItem("url", loginUrl);
     window.location.href = loginUrl;
   }
 }
