@@ -75,7 +75,7 @@
 
 .blurred {
   visibility: visible !important;
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .show {
@@ -101,11 +101,11 @@
     right: 0;
     width: 50%;
     transform: translateX(100%);
-    background-color: white;
+    background-color: black;
     height: 100vh;
     z-index: 99;
     transition: all 0.5s ease-in-out;
-    box-shadow: -7px 0 13px 0 rgb(168 179 211 / 50%);
+    box-shadow: -7px 0 13px 0 rgb(30 215 96 / 20%);
     padding: 5rem 2rem;
     display: flex;
     flex-direction: column;

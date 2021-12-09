@@ -38,6 +38,7 @@ const Card = (props) => {
       <div className="desc">
         {/* <p className="desc__title">Name</p> */}
         <p>{props.name}</p>
+        <p>{props.nim}</p>
       </div>
     </div>
   );
@@ -89,7 +90,6 @@ const About = () => {
                 <div className="desc-sidebar__more">
                   <h3 className="title">Summary</h3>
                   <p className="summary"> {side ? side.summary : ""}</p>
-                  <h3 className="title">Contacts</h3>
                 </div>
               </div>
             )}
