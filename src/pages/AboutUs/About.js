@@ -15,15 +15,17 @@ const teamMember = [
   },
   {
     name: "Fernando Khorasani",
-    nim: "000000XXXXX",
+    nim: "00000043088",
     img: profileFernando,
-    summary: "",
+    summary:
+      "Hello! My name is Fernando Khorasani, student of Universitas Multimedia Nusantara, Indonesia. An enthusiastic software engineer learns a new skill every day. Student, freelance web developer, and React JS enthusiast. Currently working on several web development projects. Active on organization and likes a challenge. Interested and still learning about web app development. Looking to leverage my knowledge and experience by becoming a laboratory assistant.",
   },
   {
     name: "Lifosmin Simon",
-    nim: "000000XXXXX",
+    nim: "00000045574",
     img: profileLifosmin,
-    summary: "",
+    summary:
+      "Hello! My name is Lifosmin Simon, student of Universitas Multimedia Nusantara, Indonesia. An enthusiastic software engineer learns a new skill every day. Student, freelance web developer, and React JS enthusiast. Currently working on several web development projects. Active on organization and likes a challenge. Interested and still learning about web app development. Looking to leverage my knowledge and experience by becoming a laboratory assistant.",
   },
 ];
 
