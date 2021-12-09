@@ -1,7 +1,13 @@
 @import "variables", "modularscale";
 
 :root {
-  --photo-width: 250px;
+  --photo-width: 350px;
+  @media screen and (max-width: 1555px) {
+    --photo-width: 300px;
+  }
+  @media screen and (max-width: 1358px) {
+    --photo-width: 250px;
+  }
   @media screen and (max-width: 1160px) {
     --photo-width: 200px;
   }
@@ -100,11 +106,53 @@
     z-index: 99;
     transition: all 0.5s ease-in-out;
     box-shadow: -7px 0 13px 0 rgb(168 179 211 / 50%);
-    padding: 2rem;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media screen and (max-width: 655px) {
       width: 100% !important;
       box-shadow: unset;
+    }
+
+    &__spinner {
+      width: 100%;
+      height: calc(100vh - 10rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__container > * {
+      margin: 0 auto;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      width: var(--photo-width);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__more {
+      width: 60%;
+
+      .title {
+        margin-top: 1rem;
+        color: $text-secondary;
+        font-weight: 500;
+      }
+
+      .summary {
+        text-align: justify;
+      }
     }
   }
 }
