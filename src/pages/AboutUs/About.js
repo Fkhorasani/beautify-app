@@ -11,7 +11,7 @@ const teamMember = [
     nim: "00000042580",
     img: profileAdrian,
     summary:
-      "Hello! My name is Bonifasius Ariesto Adrian Finantyo, student of Universitas Multimedia Nusantara, Indonesia. An enthusiastic software engineer learns a new skill every day. Student, freelance web developer, and React JS enthusiast. Currently working on several web development projects. Active on organization and likes a challenge. Interested and still learning about web app development. Looking to leverage my knowledge and experience by becoming a laboratory assistant.",
+      "Hello! My name is Bonifasius Ariesto Adrian Finantyo, student of Universitas Multimedia Nusantara, Indonesia. An enthusiastic software engineer learns a new skill every day. Student, freelance web developer, and React JS enthusiast. Currently working on several web development projects. Active on organization and likes a challenge. Interested and still learning about web app development.",
   },
   {
     name: "Fernando Khorasani",

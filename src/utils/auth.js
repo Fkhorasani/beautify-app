@@ -30,8 +30,7 @@ export default class Auth {
     AUTH_URL +=
       "?client_id=" + encodeURIComponent(process.env.REACT_APP_CLIENT_ID);
     AUTH_URL +=
-      "&redirect_uri=" +
-      encodeURIComponent(`${process.env.REACT_APP_REDIRECT_URL}/callback/`);
+      "&redirect_uri=" + encodeURIComponent(process.env.REACT_APP_REDIRECT_URL);
     AUTH_URL += "&scope=" + encodeURIComponent(SCOPE);
     AUTH_URL += "&response_type=" + encodeURIComponent("token");
     AUTH_URL += "&state=" + encodeURIComponent(state);
