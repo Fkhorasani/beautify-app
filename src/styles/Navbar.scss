@@ -46,15 +46,15 @@
     font-weight: 500;
     &.active {
       font-weight: 500;
-      color: $text-dark;
+      color: $text-green;
       svg path {
-        fill: $text-dark;
+        fill: $text-green;
       }
     }
     &:not(.active):hover {
-      color: $text-onhover;
+      color: $text-green-sec;
       svg path {
-        fill: $text-onhover;
+        fill: $text-green-sec;
       }
     }
   }

@@ -22,6 +22,7 @@
     }
   }
   &__content {
+    animation: discoBg 60s linear infinite;
     width: 79.7%;
     padding: 40px 80px 140px;
     @media (max-width: 1024px) {
@@ -33,5 +34,33 @@
     @media (max-width: 450px) {
       padding: 40px 30px 140px;
     }
+  }
+}
+
+
+@keyframes discoBg {
+  0%{
+    // background: #FFC4E1;
+    background: linear-gradient(180deg, #FFC4E1 -120%, #0000 50%);
+  }
+  20%{
+    // background: #F6D7A7;
+    background: linear-gradient(180deg, #F6D7A7 -120%, #0000 50%);
+  }
+  40%{
+    // background: #C37B89;
+    background: linear-gradient(180deg, #C37B89 -120%, #0000 50%);
+  }
+  60%{
+    // background: #D3E4CD;
+    background: linear-gradient(180deg, #D3E4CD -120%, #0000 50%);
+  }
+  80%{
+    // background: #986D8E;
+    background: linear-gradient(180deg, #986D8E -120%, #0000 50%);
+  }
+  100%{
+    // background: #DE8971;
+    background: linear-gradient(180deg, #DE8971 -120%, #0000 50%);
   }
 }

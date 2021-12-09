@@ -2,8 +2,17 @@
 "variables",
 "modularscale";
 
+.block:hover{
+  .app__content{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) -50%, rgba(0,0,0,1) 50%);
+  }
+}
+
 .block {
   padding: 0 10px;
+
+  
   &__media {
     margin-bottom: 12px;
   }
