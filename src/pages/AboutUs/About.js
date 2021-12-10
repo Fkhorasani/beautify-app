@@ -85,6 +85,7 @@ const About = () => {
                   <img
                     src={side ? side.img : ""}
                     alt={side ? side.name + " profiles" : ""}
+                    loading="lazy"
                   />
                 </div>
                 <div className="desc-sidebar__more">
