@@ -1,7 +1,6 @@
 {
   "name": "Spotify-React",
   "version": "0.1.0",
-  "homepage": "beautify-spotify.netlify.app",
   "private": true,
   "engines": {
     "node": "16.13.0"
